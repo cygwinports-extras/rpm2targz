@@ -1,0 +1,76 @@
+rpm2targz
+------------------------------------------
+This package contains 'rpm2targz', a simple utility to convert Red
+Hat-style RPM packages into standard tar.gz archives.
+
+Runtime requirements:
+  cygwin-1.5.25-15
+  bash
+  bzip2
+  coreutils
+  cpio
+  file
+  gzip
+  lzma
+  rpm
+  tar
+  which
+
+Build requirements:
+  cygwin-1.5.25-15
+  binutils-20080624-2
+  cygport-0.4.0-1
+  gcc-core-3.4.4-3
+  make-3.81-1
+  sed-4.1.5-2
+
+Canonical website:
+  http://www.slackware.com/config/packages.php
+
+Canonical download:
+  http://git.overlays.gentoo.org/gitweb/?p=proj/rpm2targz.git;a=summary
+
+-------------------------------------------
+
+Build instructions:
+  unpack rpm2targz-9.0.0.2g-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./rpm2targz-9.0.0.2g-X.cygport all
+
+This will create:
+  /usr/src/rpm2targz-9.0.0.2g-X-src.tar.bz2
+  /usr/src/rpm2targz-9.0.0.2g-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/rpm2tar
+  /usr/bin/rpm2tarbz2
+  /usr/bin/rpm2targz
+  /usr/bin/rpm2tarlzma
+  /usr/bin/rpm2tbz2
+  /usr/bin/rpm2tgz
+  /usr/bin/rpmoffset.exe
+  /usr/share/doc/rpm2targz-9.0.0.2g/rpm2targz.README
+  /usr/share/doc/rpm2targz-9.0.0.2g/rpm2targz.README.Gentoo
+
+------------------
+
+Port Notes:
+
+----- version 9.0.0.2g-1 -----
+Version bump.
+
+----- version 9.0.0.1g-1 -----
+Version bump from Gentoo Overlays.
+
+----- version 9.0-1 -----
+Initial release for Cygwin.
+Includes patches from Gentoo ebuild 9.0-r4.
+
+
+Cygwin port maintained by:
+http://sourceware.org/cygwinports/
