@@ -1,5 +1,0 @@
-category: Archive
-requires: libgcc1 bash bzip2 coreutils cpio file gzip tar xz
-sdesc: "Converts RPM packages to tarballs"
-ldesc: "This package contains rpm2targz, a simple utility to convert
-Red Hat-style RPM packages into standard tar.gz archives."

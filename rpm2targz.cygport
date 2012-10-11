@@ -1,0 +1,18 @@
+NAME="rpm2targz"
+VERSION=9.0.0.5g
+RELEASE=1
+CATEGORY="Archive"
+SUMMARY="Converts RPM packages to tarballs"
+DESCRIPTION="This package contains rpm2targz, a simple utility to convert
+Red Hat-style RPM packages into standard tar.gz archives."
+HOMEPAGE="http://www.slackware.com/config/packages.php"
+SRC_URI="mirror://gentoo/${NAME}-${VERSION}.tar.xz"
+REQUIRES="bzip2 coreutils cpio file gzip tar xz"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	cygmake
+}
+
+DOCS="${PN}.README*"
